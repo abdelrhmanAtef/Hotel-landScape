@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Web Page</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="shortcut icon" href="image/service.jpg" />
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top text-center">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="./image/l.png" style="width: 70px;height: 60px;"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto" style="direction: rtl;">
+                    <li class="nav-item ">
+                        <a class="nav-link run" href="#">الرئيسية <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hotel" data-value="hotel">حول</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#room" data-value="room">الغرف</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#service" data-value="service"> الخدمات </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">تواصل معنا</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- /////////////////////////////////////////////////////// -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="overlaya"></div>
+                <img src="./image/head1.jpg" alt="First slide">
+                <div class="x">
+                    <h1>افضل الغرف المريحة</h1>
+                    <p>احجز غرفة من افضل الغرف المزودة بالعديد من الخدمات التي تلبي كافة احتياجاتك</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="overlaya"></div>
+                <img src="./image/head2.jpg" alt="Second slide">
+                <div class="x">
+                    <h1>اجمل اطلالة</h1>
+                    <p>اطلالة خلابة على الساحل </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="overlaya"></div>
+                <img src="./image/head3.jpg" alt="Third slide">
+                <div class="x">
+                    <h1>استمتع في وقت راحتك</h1>
+                    <p class="lead">احجز غرفة الان واستمتع بأجمل اللحظات في عطلتك</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!-- //////////////////////////////////// -->
+    <!-- start hotel section  -->
+    <section class="hotel" id="hotel">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-xs-12">
+                    <div class="im1">
+                        <img src="image/photo-1551286923-c82d6a8ae079.jpg" class="img-fluid">
+                        <img src="image/photo-1560200353-ce0a76b1d438.jpg" class="img-fluid lol">
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xs-12">
+                    <div class="im2">
+                        <h1>حول الفندق</h1>
+                        <hr>
+                        <p class="">
+                            فندق اوركيد الذي يقع في اللاذقية على الساحل السوري والذي يبلغ مساحته 100 كم ويضم 20 طابق
+                            بداخلهم 400 غرفة متنوعة ما بين غرف وأجنحة</p> <br />
+                        <p>احجز غرفة من افضل الغرف في فندق اوركيد</p>
+                        <button class="hotelbtn btn" id="hotelbtn">المزيد من المعلومات حول التصميم الدخلي</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end hotel section -->
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+    <!-- start over page this page show when click on hotel button  -->
+    <section class="overpage" id="page">
+        <div class="inpop" id="pop">
+            <h3>التصميم الداخلي</h3>
+            <hr>
+            <h4>صور الفندق من الداخل</h4>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4" style="overflow: hidden">
+                        <a href="image/a.jpg" data-fancybox="im" data-caption="My caption" class="hotelsora">
+                            <img src="image/a.jpg" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-4" style="overflow: hidden">
+                        <a href="image/b.jpg" data-fancybox="im" data-caption="My caption" class="hotelsora">
+                            <img src="image/b.jpg" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-4" style="overflow: hidden">
+                        <a href="image/c.jpg" data-fancybox="im" data-caption="My caption" class="hotelsora">
+                            <img src="image/c.jpg" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <p>
+                    ان الفندق مصمم من قبل ابرز المهندسين بحيث يوفر كافة خدمات العائلة وبداخل الفندق لدينا العديد من
+                    الخدمات مثل المسابح والمنتجعات والمطاعم والالعاب المائية للأطفال</p>
+                <hr>
+                <button class="close">Close</button>
+            </div>
+
+        </div>
+    </section>
+    <!-- end over page  this page show when click on hotel button -->
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+    <!-- start section rooms -->
+    <section class="room" id="room">
+        <div class="container">
+            <h2 class="genh2">الغــرف</h2>
+            <span class="genspan"></span>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <div class="disc">
+                        <a href="./image/room1.jpg" data-fancybox="images" data-caption="My caption">
+                            <img src="./image/room1.jpg" class="img-fluid">
+                        </a>
+                        <h5>غرفة سوبريور مزدوجة</h5>
+                        <p>تتسع لشخصين او ثلاث اشخاص</p>
+                        <p>سعر حجز الغرفة باليوم الواحد $130</p>
+                        <button class="btnn">المزيد من المعلومات</button>
+
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="disc">
+                        <a href="./image/room2.jpg" data-fancybox="images" data-caption="My caption">
+                            <img src="./image/room2.jpg" class="img-fluid">
+                        </a>
+                        <h5>غرفة سوبريور كينغ</h5>
+                        <p> غرف مميزة تتسع لعدة اشخاص</p>
+                        <p>سعر حجز الغرفة باليوم الواحد $130</p>
+                        <button class="btnn">المزيد من المعلومات</button>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="disc">
+                        <a href="./image/room3.jpg" data-fancybox="images" data-caption="My caption">
+                            <img src="./image/room3.jpg" class="img-fluid">
+                        </a>
+                        <h5>جناح من غرفتي نوم</h5>
+                        <p class="p-small">يوفر هذا الجناح غرفتين نوم ذات اطلالات على البحر وتتسع لأربع اشخاص</p>
+                        <p>سعر حجز الغرفة باليوم الواحد $150</p>
+                        <button class="btnn">المزيد من المعلومات</button>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="disc">
+                        <a href="./image/room4.jpg" data-fancybox="images" data-caption="My caption">
+                            <img src="./image/room4.jpg" class="img-fluid">
+                        </a>
+                        <h5>جناح عائلي مطل على البحر</h5>
+                        <p class="p-small">يحتوي هذا الجناح على غرفتين نوم و شرفة مطلة على البحر</p>
+                        <p>سعر حجز الغرفة باليوم الواحد $200</p>
+                        <button class="btnn">المزيد من المعلومات</button>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="disc">
+                        <a href="./image/room5.jpg" data-fancybox="images" data-caption="My caption">
+                            <img src="./image/room5.jpg" class="img-fluid">
+                        </a>
+                        <h5>جناح ديلوكس على البحر</h5>
+                        <p class="p-small"> يتميز بأن هذا الجناح رفيع الطراز واطلالته مباشرة على البحر </p>
+                        <p>سعر حجز الغرفة باليوم الواحد $250</p>
+                        <button class="btnn">المزيد من المعلومات</button>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="disc">
+                        <a href="./image/room6.jpg" data-fancybox="images" data-caption="My caption">
+                            <img src="./image/room6.jpg" class="img-fluid">
+                        </a>
+                        <h5>جناح ملكي</h5>
+                        <p class="p-small">يتوفر في هذا الجناح عالي المستوي الذي تم تصميمه بشكل ملكي</p>
+                        <p>سعر حجز الغرفة باليوم الواحد $1000</p>
+                        <button class="btnn">المزيد من المعلومات</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section rooms -->
+    <!-- /////////// start service /////////////// -->
+    <section class="service" id="service">
+        <div class="container">
+            <h2 class="genh2">خدمتنـــا</h2>
+            <span class="genspan"></span>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6 ser-v order-lg-2 order-md-2 order-xs-2"></div>
+                        <div class="col-md-6  order-lg-1 order-xs-1 ">
+                            <div class="ser-a ">
+                                <h3>افخم المطاعم</h3>
+                                <p class="lead">تذوق افضل الاطعمة والوجبات بكافة انواعها في مطاعم فندق الاوركيد</p>
+                                <button class="btn btn-primary ser-btn">المزيد من المعلومات</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-6 ser-v2"></div>
+                <div class="col-md-6">
+                    <div class="ser-a">
+                        <h3>افضل المسابح النظيفة والمعقمة</h3>
+                        <p class="lead">استمتع انت وعائلتك بافضل المسابح في هذا الصيف الحار </p>
+                        <button class="btn btn-primary ser-btn">المزيد من المعلومات</button>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6 ser-v3 order-lg-2 order-md-2 order-xs-2"></div>
+                        <div class="col-md-6  order-lg-1 order-xs-1 ">
+                            <div class="ser-a ">
+                                <h3>افخم المنتجعات خصيصاً لك</h3>
+                                <p class="lead">استمتع انت وعائلتك في افضل المنتجعات في العالم</p>
+                                <button class="btn btn-primary ser-btn">المزيد من المعلومات</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /////////// start service /////////////// -->
+    <!-- start gools section -->
+    <section class="gools" id="gools">
+        <div class="container text-center">
+            <h2 class="genh2">اهدافنا</h2>
+            <span class="genspan"></span>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="image/gools1.svg" class="img-fluid">
+                    <h4>تحقيق افضل خدمة للعملاء</h4>
+                    <p class="lead">خدمة العملاء هو هدفنا الاساسي لذلك نقوم بتلبية كافة متطلبات العميل</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="image/gools2.svg" class="img-fluid">
+                    <h4>تأمين كافة المستلزمات</h4>
+                    <p class="lead">تأمين كافة المستلزمات الضرورية للعميل</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="image/gools3.svg" class="img-fluid">
+                    <h4> توفير عروض منافسة</h4>
+                    <p class="lead">توفير افضل الغرف بأرخص الاسعار</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end gools section -->
+    <!-- start seal section -->
+    <section class="seal ">
+        <div class="overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 mx-auto text-right pt-5 pb-7">
+                        <h2>عروض مميزة خصيصاً لك</h2>
+                        <p>اتطلع على الغرف واختر الغرف المناسبة لك</p>
+                    </div>
+                    <div class="col-md-12 mx-auto">
+                        <button class="btn btn-primary">احجز الأن</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- start seal section -->
+    <!-- start section galary -->
+    <section class="galary">
+        <h2 class="genh2">معرض الصور</h2>
+        <span class="genspan"></span>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="./image/galary1.jpg" data-fancybox="image">
+                        <img src="./image/galary1.jpg" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="./image/galary2.jpg" data-fancybox="image">
+                        <img src="./image/galary2.jpg" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="./image/galary3.jpg" data-fancybox="image">
+                        <img src="./image/galary3.jpg" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="./image/galary4.jpg" data-fancybox="image">
+                        <img src="./image/galary4.jpg" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="./image/galary5.jpg" data-fancybox="image">
+                        <img src="./image/galary5.jpg" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="./image/galary6.jpg" data-fancybox="image">
+                        <img src="./image/galary6.jpg" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="./image/galary7.jpg" data-fancybox="image">
+                        <img src="./image/galary7.jpg" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="./image/galary8.jpg" data-fancybox="image">
+                        <img src="./image/galary8.jpg" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section galary -->
+    <!-- starr carosal section -->
+    <section class="slider">
+        <h2 class="genh2">SWOT ANALAYSIS</h2>
+        <span class="genspan"></span>
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <div class="carousel-caption ">
+                        <h1>التهديدات</h1>
+                        <p class="lead">قلة الزبائن والموظفين</p>
+                        <p class="lead">وقلة المستثمرين في المنتجعات</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="carousel-caption">
+                        <h1>نقاط القوة</h1>
+                        <p class="lead">الخدمة الممتازة والامكانيات العالية</p>
+                        <p class="lead">وتجهيزات المبنى والمنتجع</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="carousel-caption ">
+                        <h1>نقاط الضعف</h1>
+                        <p class="lead">حجم المطابخ صغيرة</p>
+                        <p class="lead">اسعار الحجز مرتفعة</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-caption ">
+                        <h1>الفرص</h1>
+                        <p class="lead">بإمكاننا الوصول الى ترتيب عالمي من حيث</p>
+                        <p class="lead">الخدمة والجودة</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="fa fa-angle-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="fa fa-angle-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+    <!-- starr carosal section -->
+    <!-- start footer section -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <h4>الروابط</h4>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-angle-right"></i>حول فندق اوركيد </li>
+                        <li><i class="fa fa-angle-right"></i>الغرف الخاص بنا </li>
+                        <li><i class="fa fa-angle-right"></i>معرض الصور </li>
+                        <li><i class="fa fa-angle-right"></i>الخدمات </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <h4>الإستعلامات</h4>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-angle-right"></i><a href="tel:01280023364">TEL : 01280023364</a></li>
+                        <li><i class="fa fa-angle-right"></i><a
+                                href="mailto:E-mail : abdelrhmanabozaid96@gmail.com ">E-mail :
+                                abdelrhmanabozaid96@gmail.com </a></li>
+                        <li><button class="btn btn-success">إرسال رسالة</button> </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <h4>موقع الفندق</h4>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-angle-right"></i>🌴 Egypt-Sharm Elshakh</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="social">
+            <div class="container text-center">
+                <ul class="list-unstyled text-center">
+                    <li><a class="fa fa-facebook" href="https://www.facebook.com/body.atef2011/" target="_blank"></a>
+                    </li>
+                    <li><i class="fa fa-twitter"></i></li>
+                    <li><a class="fa fa-instagram" href="https://www.instagram.com/abdelrhman.abozaid/"
+                            target="_blank"></a></li>
+                    <li><i class="fa fa-google-plus"></i></li>
+                    <li><a class="fa fa-envelope" href="mailto:E-mail : abdelrhmanabozaid96@gmail.com "></a></li>
+                </ul>
+                <div class="save">
+                    <p class="lead">&copy; All right Reversed .</p>
+                    <p class="lead">Design By <a href="https://www.facebook.com/body.atef2011/"
+                            target="_blank">AbdelRhman</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ////// strat over page 2//////// -->
+    <section class="overpage2" id="page2">
+        <div class="inpage">
+            <div class="row">
+                <div class="col-md-4 photo"></div>
+                <div class="col-md-8">
+                    <h2>غرفة سوبريور مزدوجة</h2>
+                    <span>$130</span>
+                    <span>$150</span>
+                    <div class="acordion">
+                        <h3>ملحقات الغرفة</h3>
+                        <ul>
+                            <li>حمام فيه جميع المستلزمات</li>
+                            <li>تكييف مركزي</li>
+                            <li>شاشة مسطحة</li>
+                            <li>مكتب صغير</li>
+                            <li>الة لصنع الشاي والقهوة</li>
+                        </ul>
+                        <h3>العروض</h3>
+                        <ul>
+                            <li>وجبتين مجاناً</li>
+                            <li>انترنت مجاني</li>
+                            <li>توصيل طعام مجاني</li>
+                        </ul>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-md-6">
+                            <select>
+                                <option disabled selected> اختر عدد الغرف</option>
+                                <option>غرفة</option>
+                                <option>غرفتان</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <select>
+                                <option disabled selected> اختر عدد ايام الحجز</option>
+                                <option>يوم</option>
+                                <option>يومان</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div style="text-align: center;">
+                        <button class="end btn btn-primary">close</button>
+                        <button class="reserve btn btn-primary">احجز الأن <i class="fa fa-cart-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ////// end over page 2//////// -->
+    <div class="move"><i class="fa fa-angle-up"></i></div>
+    <!-- /////////spinner//////// -->
+    <div class="lds-ring">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <script src="js/query3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
